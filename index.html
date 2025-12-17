@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跟著婷一起瘦 - 專業減脂規劃</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .blob-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; 
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-xl text-emerald-600 tracking-wider">TING's DIET</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-stone-600 hover:text-emerald-600 transition">關於我</a>
+                    <a href="#tips" class="text-stone-600 hover:text-emerald-600 transition">減脂觀念</a>
+                    <a href="#menu" class="text-stone-600 hover:text-emerald-600 transition">一週菜單</a>
+                    <a href="#contact" class="px-4 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition">領取套組</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-4 sm:px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Text Content -->
+            <div class="z-10 order-2 md:order-1">
+                <span class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold mb-4">
+                    產後修復專家
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                    嗨，我是婷！<br>
+                    帶妳找回<span class="text-emerald-600">自信體態</span>
+                </h1>
+                <p class="text-lg text-stone-600 mb-8 leading-relaxed">
+                    我自己是產後從 <strong>53kg 瘦下來到 41kg</strong>。<br>
+                    曾經試過 168、中醫、運動都沒效果，直到找到對的飲食搭配才真正穩定下來。<br>
+                    現在，我想把這套幫助過上千位姊妹的方法分享給妳。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://line.me/ti/p/RUuClxSP79" target="_blank" class="inline-flex justify-center items-center px-8 py-4 bg-emerald-600 text-white rounded-full text-lg font-semibold shadow-lg hover:bg-emerald-700 hover:-translate-y-1 transition duration-300">
+                        <i class="fab fa-line text-2xl mr-2"></i> 免費諮詢套組
+                    </a>
+                    <a href="#menu" class="inline-flex justify-center items-center px-8 py-4 bg-white text-stone-700 border border-stone-200 rounded-full text-lg font-semibold hover:bg-stone-50 transition">
+                        查看一週食譜
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image/Visual -->
+            <div class="relative order-1 md:order-2 flex justify-center">
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 bg-emerald-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                
+                <div class="relative w-80 h-[28rem] md:w-96 md:h-[32rem]">
+                   <!-- 模擬用戶上傳的風格照片 -->
+                   <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                        alt="Ting 營養師" 
+                        class="w-full h-full object-cover rounded-2xl shadow-2xl rotate-3 hover:rotate-0 transition duration-500 z-10 relative bg-stone-200">
+                   
+                   <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl z-20 animate-bounce">
+                       <p class="text-sm font-bold text-stone-500">減重成果</p>
+                       <p class="text-2xl font-bold text-emerald-600">53kg <i class="fas fa-arrow-right text-sm text-stone-400 mx-1"></i> 41kg</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="py-20 bg-emerald-50/50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">減脂小提醒</h2>
+                <div class="h-1 w-20 bg-emerald-500 mx-auto rounded-full"></div>
+                <p class="mt-4 text-stone-600">簡單三原則，讓妳的改變事半功倍</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tip 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-100 text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 text-emerald-600 text-2xl">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">完美餐盤</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        每天三餐盡量遵循：<br>
+                        <span class="font-bold text-emerald-700">蛋白質 + 蔬菜 + 適量澱粉</span>
+                    </p>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-100 text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6 text-red-500 text-2xl">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">飲食禁忌</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        為了更好的效果，請盡量避免：<br>
+                        <span class="font-bold text-red-500">油炸食物、含糖飲料</span>
+                    </p>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-100 text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-500 text-2xl">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">充足水分</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        代謝的關鍵在於水！<br>
+                        每天喝足 <span class="font-bold text-blue-600">2000 ml</span> 左右
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meal Plan Section -->
+    <section id="menu" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">一週減脂食譜</h2>
+                <p class="text-stone-500">超簡單！也很容易跟上 (午餐不餓可以不吃唷)</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Day 1 -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100 hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=60" alt="Day 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">DAY 1</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">早餐</span>
+                                <p class="text-sm font-medium text-stone-700">茶葉蛋 2 顆 + 代餐</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">午餐</span>
+                                <p class="text-sm font-medium text-stone-700">雞胸肉 + 青菜 + 半碗飯</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">晚餐</span>
+                                <p class="text-sm font-medium text-stone-700">蔬菜湯 + 燙花椰菜 + 豆腐</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100 hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=500&q=60" alt="Day 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">DAY 2</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">早餐</span>
+                                <p class="text-sm font-medium text-stone-700">燕麥 + 無糖優格 + 藍莓</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">午餐</span>
+                                <p class="text-sm font-medium text-stone-700">鮭魚排 + 時蔬 + 地瓜</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">晚餐</span>
+                                <p class="text-sm font-medium text-stone-700">煎蛋 + 炒青菜 + 小黃瓜</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100 hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=500&q=60" alt="Day 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">DAY 3</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">早餐</span>
+                                <p class="text-sm font-medium text-stone-700">全麥吐司 + 酪梨 + 蛋</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">午餐</span>
+                                <p class="text-sm font-medium text-stone-700">牛肉片 + 燙青菜 + 半碗糙米飯</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">晚餐</span>
+                                <p class="text-sm font-medium text-stone-700">雞胸肉沙拉 + 玉米</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100 hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=500&q=60" alt="Day 4" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">DAY 4</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">早餐</span>
+                                <p class="text-sm font-medium text-stone-700">代餐 + 水煮蛋</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">午餐</span>
+                                <p class="text-sm font-medium text-stone-700">豬里肌 + 地瓜 + 青花菜</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">晚餐</span>
+                                <p class="text-sm font-medium text-stone-700">清蒸魚 + 海帶芽湯</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 5 -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100 hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=60" alt="Day 5" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">DAY 5</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">早餐</span>
+                                <p class="text-sm font-medium text-stone-700">代餐 + 優格燕麥</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">午餐</span>
+                                <p class="text-sm font-medium text-stone-700">牛肉炒青菜 + 地瓜</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">晚餐</span>
+                                <p class="text-sm font-medium text-stone-700">蒸南瓜 + 雞胸肉</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100 hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=500&q=60" alt="Day 6" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">DAY 6</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">早餐</span>
+                                <p class="text-sm font-medium text-stone-700">水煮蛋 + 全麥土司</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">午餐</span>
+                                <p class="text-sm font-medium text-stone-700">雞腿排 + 青菜 + 小份飯</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">晚餐</span>
+                                <p class="text-sm font-medium text-stone-700">涼拌豆腐 + 蔬菜湯</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Day 7 -->
+                 <div class="group bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100 hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1511690656952-34342d227418?auto=format&fit=crop&w=500&q=60" alt="Day 7" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">DAY 7</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">早餐</span>
+                                <p class="text-sm font-medium text-stone-700">燕麥片 + 代餐</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">午餐</span>
+                                <p class="text-sm font-medium text-stone-700">燒烤魚 + 燙青菜 + 地瓜</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-xs font-bold text-stone-400 w-12 uppercase mt-1">晚餐</span>
+                                <p class="text-sm font-medium text-stone-700">炒蛋 + 菠菜 + 味噌湯</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action Card -->
+                <div class="group bg-emerald-600 rounded-2xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-center p-8 text-white">
+                    <h3 class="text-2xl font-bold mb-4">想要更快看到成果？</h3>
+                    <p class="mb-6 opacity-90">我有一套幫助上千位姊妹瘦身的專屬套組，讓妳代謝提高、少走冤枉路！</p>
+                    <a href="https://line.me/ti/p/RUuClxSP79" target="_blank" class="px-8 py-3 bg-white text-emerald-600 rounded-full font-bold hover:bg-stone-100 transition shadow-lg w-full">
+                        私訊了解套組
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Results/CTA Section -->
+    <section id="contact" class="py-24 bg-stone-900 text-stone-300 text-center relative overflow-hidden">
+        <!-- Background Decorative Elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-emerald-500 rounded-full mix-blend-overlay filter blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full mix-blend-overlay filter blur-3xl"></div>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-4 relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                妳想不想看看我平常怎麼搭配？
+            </h2>
+            <p class="text-lg mb-10 text-stone-400">
+                如果妳也想要瘦身，歡迎私訊我留言「套組」，我會給妳更多的資訊了解。
+            </p>
+            
+            <a href="https://line.me/ti/p/RUuClxSP79" target="_blank" class="inline-flex items-center justify-center px-10 py-5 bg-[#06C755] text-white rounded-full text-xl font-bold hover:bg-[#05b64d] transition duration-300 shadow-lg hover:shadow-green-500/25">
+                <i class="fab fa-line text-3xl mr-3"></i>
+                立即私訊 LINE 好友
+            </a>
+            
+            <p class="mt-6 text-sm text-stone-500">
+                點擊上方按鈕，開啟妳的改變之旅
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-600 py-8 text-center text-sm">
+        <p>&copy; 2024 Ting's Diet Class. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Floating CTA for Mobile -->
+    <div class="fixed bottom-6 right-6 md:hidden z-50">
+        <a href="https://line.me/ti/p/RUuClxSP79" target="_blank" class="flex items-center justify-center w-14 h-14 bg-[#06C755] text-white rounded-full shadow-lg hover:bg-[#05b64d] transition animate-bounce">
+            <i class="fab fa-line text-3xl"></i>
+        </a>
+    </div>
+
+</body>
+</html>
